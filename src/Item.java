@@ -1,5 +1,3 @@
-package composite;
-
 public class Item implements Lista {
     
     private String texto;
@@ -10,7 +8,19 @@ public class Item implements Lista {
     
     @Override
     public String getHTML() {
-        return this.texto;
+        return texto;
     }
-    
+
+    //no los implementa xq es hoja
+    @Override
+    public void agregar(Lista obj) {
+
+    }
+
+    //no los implementa xq es hoja
+    @Override
+    public void eliminar(Lista obj) {
+
+    }
+
 }
